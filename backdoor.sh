@@ -6,10 +6,6 @@ PAM_VERSION=
 PAM_FILE=
 PASSWORD=
 
-# Initialize our own variables:
-output_file=""
-verbose=0
-
 echo "Automatic PAM Backdoor"
 
 function show_help {
