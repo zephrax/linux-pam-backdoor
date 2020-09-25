@@ -24,3 +24,14 @@ After that, you can log-in to the system using an existing user, and the previou
 Use this for educational purposes only.
 I am not responsible for the damage you might cause.
 
+## Dependencies 
+
+Tested with ubuntu 20.04: 
+* 1.1.8 and older: failed to compile
+* 1.2.0: worked
+* 1.3.0 to 1.4.0: worked
+
+The following packages where used
+```bash
+apt install -y  autoconf automake autopoint bison bzip2 docbook-xml docbook-xsl flex gettext libaudit-dev libcrack2-dev libdb-dev libfl-dev libselinux1-dev libtool libcrypt-dev libxml2-utils make pkg-config sed w3m xsltproc xz-utils gcc
+```
